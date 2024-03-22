@@ -1,11 +1,11 @@
 # Projects
 In this github you can see my public projects.
 ## WebApp/Site projects
-GPTBox
+GPTBox (PHP, HTML/CSS & JavaScript)
 
 ## Software Development Projects
-SmartLocker
+SmartLocker 
 
-R4Car
+R4Car 
 
-ConAmbiente (Thales project) (In development)
+ConAmbiente (Thales project) (In development) 
