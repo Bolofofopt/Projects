@@ -1,5 +1,5 @@
 # ConAmbiente
-### Code not available due to security reasons
+### ***Code not available due to security reasons***
 ## Description
 This Software Development project has the objective of controling remotetly the ambient of a technical locker network, it consists of controling the Temperature, Humidity, Hydrogen, Pressure, UPS Status and power availability status.
 # BASIC OVERVIEW
@@ -15,8 +15,8 @@ In this basic Overview we can see that the Lockers don't have cables between the
 Switch
 Ubuntu Server with **Zabbix Dashboard**
 PCBs
-## Challenges
-### Hydrogen Sensor
+# Challenges
+## Hydrogen Sensor
 The principal challenges were the Hydrogen sensor, because of the way it works:
   The MQ-8 sensor (not the module) has a resistor inside that overheats (because it's powered 5v) and then it triggers another resistor that differs when there is presence of Hydrogen.
 ![image](https://github.com/Bolofofopt/Projects/assets/145719526/7fed941b-467f-49df-b0c2-84ad026ec0eb)
@@ -35,7 +35,7 @@ The circuit ends like this:
 The Green cable is connected to the GPIO33 to read the Vout
 
 
-### SNMP Board
+## SNMP Board
 The SNMP Board it's used to connect to the UPS and to retreive vital information about the status of the UPS.
 The challenge was I needed to Develop everything included the SNMP Board when I dind't have the UPS and when I started I didn't know anything about SNMP and SNMP Boards. Put despite de challenge I overcome it in no time and when I tested in the field everything worked like it should.
 
