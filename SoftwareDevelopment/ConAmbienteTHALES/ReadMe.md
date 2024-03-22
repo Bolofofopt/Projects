@@ -17,7 +17,9 @@ In this basic Overview we can see that the Lockers don't have cables between the
 
 
 Switch
+
 Ubuntu Server with **Zabbix Dashboard**
+
 PCBs
 # Challenges
 ## Hydrogen Sensor
