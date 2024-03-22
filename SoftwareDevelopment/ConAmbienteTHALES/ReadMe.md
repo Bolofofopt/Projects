@@ -1,5 +1,9 @@
 # ConAmbiente
 ### ***Code not available due to security reasons***
+# Results
+TO COME.
+
+
 ## Description
 This Software Development project has the objective of controling remotetly the ambient of a technical locker network, it consists of controling the Temperature, Humidity, Hydrogen, Pressure, UPS Status and power availability status.
 # BASIC OVERVIEW
@@ -38,7 +42,3 @@ The Green cable is connected to the GPIO33 to read the Vout
 ## SNMP Board
 The SNMP Board it's used to connect to the UPS and to retreive vital information about the status of the UPS.
 The challenge was I needed to Develop everything included the SNMP Board when I dind't have the UPS and when I started I didn't know anything about SNMP and SNMP Boards. Put despite de challenge I overcome it in no time and when I tested in the field everything worked like it should.
-
-
-# Results
-TO COME.
