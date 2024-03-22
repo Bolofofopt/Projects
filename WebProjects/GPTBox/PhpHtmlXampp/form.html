@@ -1,0 +1,65 @@
+<head> <!-- Início da seção de cabeçalho do documento HTML -->
+  
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o documento HTML como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+    <!-- Define a viewport para tornar o site responsivo em dispositivos móveis -->
+    <title>Formulário</title>
+  <style>                                     /* Inicio estilos CSS */
+      .btn {
+        display: inline-block;                /*define como o elemento deve ser exibido*/
+        font-weight: 400;                     /*define a espessura da fonte*/
+        color: #212529;                     /*define a cor do texto*/
+        text-align: center;                   /*Alinha o texto ao centro*/
+        vertical-align: middle;               /*Alinha verticalmente ao meio*/
+        cursor: pointer;                      /*Define o tipo de cursor*/
+        background-color: #D6D2CE;          /*define a cor de fundo*/
+        border: 1px solid transparent;        /*define a borda*/
+        padding: .375rem .75rem;              /*define o preenchimento*/
+        font-size: 1rem;                      /*define o tamanho da fonte*/
+        line-height: 1.5;                     /*define a altura da linha*/
+        border-radius: .25rem;                /*define o raio da borda*/
+        transition-duration: 0.4s;            /*define a duração da transição*/
+      }
+  
+      .btn:hover {
+        color: #212529;                       /*define a cor do texto*/
+        background-color: #C0BEB9;            /*define a cor de fundo*/
+        border-color: #C0BEB9;                /*define a cor da borda*/
+      }
+    </style>                                      <!-- Fim do estilo CSS -->
+  <script>                                        /*Inicio do script JavaScript*/
+      function confirmSubmit() {                  /*pop-up de uma caixa de dialogo de confirmação*/
+        return confirm("Ao submeter este formulário está a concordar com a nossa política de Privacidade.");
+      }
+    </script>                                     <!-- Fim do script JavaScript -->
+  </head>                                         <!-- Fim da seção de cabeçalho do documento HTML -->
+  <body>
+     <!-- Início do formulário, quando o formulário for enviado a função confirmSubmit é chamada -->
+    <form action="/PAP_XAMPP/php_XAMPP/process_formtesteFull_XAMPP.php" method="post" onsubmit="return confirmSubmit()">
+      <label for="PrimeiroNome">Primeiro Nome:</label>
+        <input type="text" id="PrimeiroNome" name="PrimeiroNome" required>
+        <br>
+      <!-- Define "material"" para o campo de seleção de material -->
+        <label for="material">Material:</label><br> <!-- Rótulo para o campo de seleção de medidas -->
+        <select id="material" name="material"> <!-- Início do campo de seleção de medidas -->
+          <option value="Caixa de Plastico">Caixa de Plastico</option> <!-- Opção de escolha -->
+          <option value="Caixa de Cartao">Caixa de Cartao</option> <!-- Opção de escolha -->
+          <option value="Caixa de Madeira">Caixa de Madeira</option> <!-- Opção de escolha -->
+          <option value="Caixa de Ferro">Caixa de Ferro</option> <!-- Opção de escolha -->
+          
+        </select><br> <!-- Fim do campo de seleção de medidas-->
+        <!-- Define "medidas"" para o campo de seleção de medidas -->
+        <label for="medidas">Medidas:</label><br>
+        <select id="medidas" name="medidas">          <!-- Início do campo de seleção de medidas -->
+          <option value="10x20x15">10x20x15</option> <!-- Opção de escolha -->
+          <option value="10x10x10">10x10x10</option> <!-- Opção de escolha -->
+          <option value="20x20x20">20x20x20</option> <!-- Opção de escolha -->
+          </select><br>
+  <br>
+          <!-- Botão de envio do formulário -->
+          <input type="submit" class="btn" value="Submit">
+        </select><br>
+    
+  </body> <!-- Fim do corpo do documento HTML -->
+  </html> <!-- Fim do documento HTML -->

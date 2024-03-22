@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+    <form action="/PAP_XAMPP/php_XAMPP/Sign_Up_XAMPP.php" method="post"> <!--  os dados são enviados para o arquivo '/PAP/php/Sign_Up_Dinamico.php' usando o metodo post -->
+        <label for="PrimeiroNome">Primeiro Nome:</label><br /> <!-- Define um rótulo para o campo de entrada do primeiro nome -->
+        <input type="text" id="PrimeiroNome" name="PrimeiroNome" required><br /> <!-- Campo de entrada para o primeiro nome. O atributo 'required' significa que o campo deve ser preenchido antes de enviar o formulário -->
+        <label for="UltimoNome">Ultimo Nome:</label><br /> <!-- Define uma label para o campo de entrada do último nome -->
+        <input type="text" id="UltimoNome" name="UltimoNome" required><br /> <!-- Campo de entrada para o último nome -->
+        <label for="email">Email:</label><br /> <!-- Define uma label para o campo de entrada do email -->
+        <input type="text" id="email" name="email" required><br /> <!-- Campo de entrada para o email -->
+        <label for="Password"> Password:</label><br /> <!-- Define uma label para o campo de entrada da senha -->
+        <input type="text" id="Password" name="Password" required><br /> <!-- Campo de entrada para a senha -->
+        <input type="submit" class="btn" value="Submit"><br /> <!-- Botão de envio. Quando clicado, envia os dados do formulário para o arquivo especificado na ação do formulário -->
+       <button onclick="window.location.href='MenuXAMPP.html'">Voltar para o menu</button> <!-- Define um botão. Quando clicado, redireciona o usuário para 'Sign_Up_Dinamico.html' -->
+    </form> <!-- Fim do formulário  -->
+</body> 
+</html> <
