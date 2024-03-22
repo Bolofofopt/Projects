@@ -11,6 +11,8 @@ This Software Development project has the objective of controling remotetly the 
 
 In this basic Overview we can see that the Lockers don't have cables between them, so I used **Wi-Fi** (mode AP [Access Point]) on the ESP32 so the main locker that has access to an outside network with a Zabbix Dashboard accesses the AP. retreives the data via an Link, such as 192.168.4.1/temp to retreive the temperature, 192.168.4.1/humi to retreive the humidity, and so on an on.
 
+The Wi-Fi SSID is hidden and the SSID and Password are saved in the NVS of the ESP32, so it's impossible to know the SSID or the Password via code.
+
 
 ## Material:
 ![image](https://github.com/Bolofofopt/Projects/assets/145719526/a83d0e6c-b4b6-439e-8125-49cf28909e42)
@@ -33,13 +35,22 @@ The principal challenges were the Hydrogen sensor, because of the way it works:
 
 
 So to know if there is presence of Hydrogen I need to do a Voltage Divider so I know the variable resistor value, and to do the Voltage Divider I need to know the Vout of the circuit. To be more accurate I put a Capacitor of 10pF to the Vout value doesn't differ much from it's true value.
+Voltage Divider:
+
+Ri = (( Vn * R2 ) / Vout ) – R2 
+
 The circuit ends like this:
 
 
 ![image](https://github.com/Bolofofopt/Projects/assets/145719526/2e36d4c6-7d03-4287-9450-c6602016e6c0)
+
 The Green cable is connected to the GPIO33 to read the Vout
 
 
 ## SNMP Board
 The SNMP Board it's used to connect to the UPS and to retreive vital information about the status of the UPS.
-The challenge was I needed to Develop everything included the SNMP Board when I dind't have the UPS and when I started I didn't know anything about SNMP and SNMP Boards. Put despite de challenge I overcome it in no time and when I tested in the field everything worked like it should.
+The challenge was I needed to Develop everything included the SNMP Board when I dind't have the UPS and when I started I didn't know anything about SNMP and SNMP Boards. Put despite de challenge I overcome it in no time and when I tested in the field everything worked like it should. The SNMP Board it's only connected to the ESP32 and then via a WebPage
+
+SNMP Board Used:
+![image](https://github.com/Bolofofopt/Projects/assets/145719526/26e4ed73-1275-4340-bc54-d26757b5d482)
+
