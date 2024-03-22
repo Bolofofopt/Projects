@@ -28,7 +28,6 @@ The principal challenges were the Hydrogen sensor, because of the way it works:
 ![image](https://github.com/Bolofofopt/Projects/assets/145719526/7fed941b-467f-49df-b0c2-84ad026ec0eb)
 ![image](https://github.com/Bolofofopt/Projects/assets/145719526/865fafb1-5018-4fa9-aa36-45f77d1b2351)
 ![image](https://github.com/Bolofofopt/Projects/assets/145719526/7137e6d4-4299-47e9-a321-b86748789df3)
-
 ![image](https://github.com/Bolofofopt/Projects/assets/145719526/ddcd7bb2-1ea9-4fc0-a8a9-346f98c25801)
 
 
