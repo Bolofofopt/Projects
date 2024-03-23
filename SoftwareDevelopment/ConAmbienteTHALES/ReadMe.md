@@ -5,11 +5,11 @@ TO COME.
 
 
 ## Description
-This Software Development project has the objective of controling remotetly the ambient of a technical locker network, it consists of controling the Temperature, Humidity, Hydrogen, Pressure, UPS Status and power availability status.
+This Software Development project has the objective of controling remotetly the ambient of a technical locker network, it consists of controling the Temperature, Humidity, Hydrogen, Pressure, UPS Status, power availability status & intrusion.
 # BASIC OVERVIEW
 ![image](https://github.com/Bolofofopt/Projects/assets/145719526/0aaafd33-6b8b-493c-b998-7722c108914d)
 
-In this basic Overview we can see that the Lockers don't have cables between them, so I used **Wi-Fi** (mode AP [Access Point]) on the ESP32 so the main locker that has access to an outside network with a Zabbix Dashboard accesses the AP. retreives the data via an Link, such as 192.168.4.1/temp to retreive the temperature, 192.168.4.1/humi to retreive the humidity, and so on an on.
+In this basic Overview we can see that the Lockers don't have cables between them, so I used **Wi-Fi** (mode AP [Access Point]) on the ESP32 so the main locker that has access to an outside network with a Zabbix Dashboard accesses the AP. retreives the data via an WebPage, such as 192.168.4.1/temp to retreive the temperature, 192.168.4.1/humi to retreive the humidity, and so on an on.
 
 The Wi-Fi SSID is hidden and the SSID and Password are saved in the NVS of the ESP32, so it's impossible to know the SSID or the Password via code.
 
