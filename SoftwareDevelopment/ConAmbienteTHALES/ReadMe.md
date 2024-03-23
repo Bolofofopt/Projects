@@ -1,5 +1,5 @@
 # ConAmbiente
-### ***Code not available because it's Thales property***
+### ***Code not available***
 # Results
 TO COME.
 
