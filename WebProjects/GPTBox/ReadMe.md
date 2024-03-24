@@ -28,8 +28,131 @@ JavaScript for the pop-up confirmation when submitting a form
 The backend of this WebApp is very secure and on a safe environment, the passwords are encripted to protect the data of the users and on the Database all that relations that are made are by IDs.
 Given that this WebApp has some pages it has a total of 4 PHP files to login, change passwords, the form itself and to signup.
 
+First, I created an connection to the database
+```php
+<?php
+$servername = "---------------";
+$username = "-------------------";
+$password = "------------------";
+$dbname = "-------------------";
+
+/*Cria o $conn para ser utilizado quando criar uma conexão à BD*/
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
+```
+
+To get the form response I needed to do a REQUEST_METHOD via POST:
+```php
+if ($_SERVER["REQUEST_METHOD"] == "POST") { /* Verifica se o método de solicitação HTTP é POST */
+  $emailCliente = $_POST['EmailCliente']; /*Atribui à váriavél $emailCliente o email*/
+  $material = $_POST['material']; /*Atribui à váriavél $material o material*/
+  $medidas = $_POST['medidas']; /*Atribui à váriavél $medidas as medidas*/
+  $tipo = $_POST['tipo']; /*Atribui à váriavél $tipo o tipo*/
+}
+```
+
+Then I needed to to a query to the SQL Database, first to create an package I needed the ID of the client and the ID of the company 
+```php
+/*Procura na Base de dados um cliente com o nome colocado no formulário*/
+$sql = "SELECT Cliente.IDcliente, Cliente.PrimeiroNome FROM Cliente WHERE Cliente.Email  = '$emailCliente'";
+/*Consulta SQL é executada como query(), utilizamos o objeto de conexão à BD $conn, o resultado é guardado 
+na varavél $result*/
+$result = $conn->query($sql);
+
+$nomeCliente = ""; /*Inicialia a variável*/
+
+if ($result->num_rows > 0) { /*Verifica se o número de linhas do resultado é maior que 0*/
+  while($row = $result->fetch_assoc()) { /*Enquanto houver linhas, atribui a linha atual à variável $row*/
+    $idCliente = $row["IDcliente"]; /*Atribui o valor da coluna IDcliente à variável $idCliente*/
+    $nomeCliente = $row["PrimeiroNome"]; /*Atribuir o nome do cliente à variável criada antes*/
+  }
+} else {
+ header("Location: https://tgei21.epvr4.net/erro/"); /*Redireciona para uma página de erro*/
+}
+```
+If the client has an account it shows the Companies data:
+```php
+$sql = "SELECT Fornecedor.NomeFornecedor, Fornecedor.EmailFornecedor, Fornecedor.MoradaFornecedor FROM Fornecedor 
+        JOIN caixas ON Fornecedor.IDcaixa = caixas.IDcaixa
+        JOIN TipoDeCaixa ON caixas.IDtipodecaixa = TipoDeCaixa.IDtipodecaixa 
+        WHERE TipoDeCaixa.colDescricaoCaixa = '$material' AND caixas.Medidas = '$medidas' AND Fornecedor.tipo = '$tipo';";
+/*Consulta SQL é executada como query(), utilizamos o objeto de conexão à BD $conn, o resultado é guardado 
+na varavél $result*/
+$result = $conn->query($sql);
+
+$nomeFornecedor = ""; /*Inicialia a variável*/
+
+if ($result->num_rows > 0) { /*Verifica se o número de linhas é maior que 0*/
+  while($row = $result->fetch_assoc()) { /*Enquanto houver linhas, atribui a linha atual à variável $row*/
+    echo "<br>"; /*Quebra de linha*/
+    echo "Nome do Fornecedor: " . $row["NomeFornecedor"]. "<br>"; /*Output dos dados do fornecedor*/
+    echo "Email do Fornecedor: " . $row["EmailFornecedor"]. "<br>"; /*Output dos dados do fornecedor*/
+    echo "Morada do Fornecedor: " . $row["MoradaFornecedor"]. "<br>"; /*Output dos dados do fornecedor*/
+    $nomeFornecedor = $row["NomeFornecedor"]; /*Atribui o nome do fornecedor à variável criada anteriormente*/
+  }
+} else {
+  echo "Nenhum resultado encontrado"; /*Avisa se não houver fornecedores encontrados*/
+}
+```
+
+Then it grabs the ID of the company and creates and package on another table with the ID of the client and the ID of the company:
+```php
+  
+/*Procura o ID do fornecedor que têm o nome do último fornecedor colocado no output dos dados*/
+$sql = "SELECT Fornecedor.IDfornecedor FROM Fornecedor WHERE Fornecedor.NomeFornecedor = '$nomeFornecedor'";
+/*Consulta SQL é executada como query(), utilizamos o objeto de conexão à BD $conn, o resultado é guardado 
+na varavél $result*/
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) { /*Verifica se o número de linhas é maior que 0*/
+  while($row = $result->fetch_assoc()) { /*Enquanto houver linhas, atribui a linha atual à variável $row*/
+    $idFornecedor = $row["IDfornecedor"]; /* Atribui o valor da coluna 'IDfornecedor' da linha atual à variável $idFornecedor */
+  }
+} else {
+  echo "Nenhum fornecedor encontrado";/*Avisa se não houver fornecedores encontrados*/
+}
+
+/* Criar um novo IDEncomenda*/
+
+/* Buscar o maior IDencomenda atual*/
+$sql = "SELECT MAX(IDencomenda) as max_id FROM Encomenda";
+$result = $conn->query($sql);
+
+$next_id = 1; /*Inicia com 1*/
+
+if ($result->num_rows > 0) { /*Verifica se o número de linhas é maior que 0*/
+  $row = $result->fetch_assoc(); /*Enquanto houver linhas, atribui a linha atual à variável $row*/
+  $next_id = $row["max_id"] + 1; /*Adiciona +1 quando deteta que existe o ID*/
+}
+
+
+/*Insere a encomenda*/
+$sql = "INSERT INTO Encomenda (IDfornecedor, IDcliente, IDencomenda) VALUES ('$idFornecedor', '$idCliente', '$next_id')";
+
+if ($conn->query($sql) === TRUE) { /*Verifica se a consulta SQL foi bem sucedida*/
+    /*Confirma que a encomenda foi adicionada e diz o ID*/
+    echo "Nova encomenda criada com sucesso. O número da encomenda é: " . $next_id;
+
+} 
+else 
+{
+  header("Location: https://tgei21.epvr4.net/erro/ "); /*Redireciona para uma página de erro*/
+}
+```
+
+Then it closes the connection to the database:
+```php
+$conn->close();/*Fecha a conexão à BD*/
+?>
+```
+
 ## CyberSecurity Agains SQL Injections
 The Database is protected agains SQL injections by using a user with less permissions so it can't delete or change data that he isn't suposed to.
+
+
 
 # Execution Timetable
 ![image](https://github.com/Bolofofopt/ProjetosC/assets/145719526/31acdb35-0887-4787-b577-01d120b45434)
