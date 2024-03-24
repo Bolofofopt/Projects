@@ -1,10 +1,10 @@
 # GPTBOX Overview
 This project, done in the context of PAP, consisted of developing a WebApp, that has the objective of helping clients that need to store/transport objects reach companies in the storage and transport regime.
-The clients that want to use our services need to be registered in our database and they can do so through one of the pages in the website, to access the form to know the companies they need to log in.
+The clients that want to use our services need to be registered in our database and they can do so through one of the pages on the website, to access the form to know the companies they need to log in.
 The website is hosted in a WebServer and on a portable XAMPP configured by us.
 
 To do this I needed to develop a WebApp down to the configuration of the WebServer to the development of Relational Databases, FTP Accounts, Frontend & Backend.
-This project had 3 WebServers so I needed to migrate servers to.
+This project had 3 Server so I needed to migrate the Databases to each server.
 
 ## Configuration of the WebServer
 To configure the WebServer I used cPanel, a tool used when the SO is Linux, and with this tool I've created Databases, MySQL Users & FTP Accounts.
