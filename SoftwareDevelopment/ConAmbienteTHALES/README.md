@@ -5,7 +5,7 @@ TO COME.
 
 # Problem to Solve
 ![Local de instalação](https://github.com/Bolofofopt/Projects/assets/145719526/a1acc6f5-d666-431a-a724-99f6f9e14fb0)
-In this technical locker network (4 lockers) there are a lot of variables such as temperature, humidity, pressure, intrusion, hydrogen, and whether everything is powered correctly that are not monitored, because of that the engineer is responsible for making sure everything is working cannot validate the correct functioning of the system without going in person, plus, if anything goes wrong he can't check it remotely.
+In this technical locker network (4 lockers) there are a lot of variables such as temperature, humidity, pressure, intrusion, hydrogen, and whether everything is powered correctly that are not monitored, because of that the engineer that is responsible for making sure everything is working cannot validate the correct functioning of the system without going in person, plus, if anything goes wrong he can't check it remotely.
 
 This project solves that problem.
 
