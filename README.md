@@ -4,7 +4,4 @@ In this repository you can see my public projects.
 GPTBox (Programmed in PHP, HTML/CSS & JavaScript)
 
 # Software Projects
-**ConAmbiente (Thales project) (In development)** ***Code Not Available***
-
-
 SmartLocker (Programmed in C)
