@@ -5,4 +5,4 @@ All Thales projects I developed are not available to the public.
 GPTBox (Programmed in PHP, HTML/CSS & JavaScript)
 
 # Software Projects
-SmartLocker (Programmed in C)
+SmartLocker (Programmed in C, compiled using Arduino IDE)
