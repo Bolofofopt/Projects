@@ -7,7 +7,3 @@ GPTBox (Programmed in PHP, HTML/CSS & JavaScript)
 
 # Software Projects
 SmartLocker (Programmed in C, compiled using Arduino IDE)
-  ### Skills improved:
-      - Software Development 
-      - Arduino IDE 
-      - C
