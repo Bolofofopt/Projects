@@ -1,3 +1,18 @@
+  ### What I learned:
+    - PHP
+    - HTML, CSS & JavaScript (entry-level)
+    - cPanel (WebServer configuration)
+    - WordPress WebServer front-end configuration
+    - MySQL & SQL
+    - Cyber Security (contra MySQL Injections)
+    - Relational Databases design & configuration
+
+  ### Skills improved:
+    - Communication 
+    - Time management 
+    - Attention to Detail
+    - Teamwork
+
 # GPTBOX Overview
 This project, done in the context of PAP, consisted of developing a WebApp, that has the objective of helping clients that need to store/transport objects reach companies in the storage and transport regime.
 The clients that want to use our services need to be registered in our database and they can do so through one of the pages on the website, to access the form to know the companies they need to log in.
