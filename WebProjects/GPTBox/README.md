@@ -1,31 +1,31 @@
   ### What I Learned:
--     PHP
--     HTML, CSS & JavaScript (entry-level)
--     cPanel (WebServer configuration)
--     WordPress WebServer front-end configuration
--     MySQL & SQL
--     Cyber Security (contra MySQL Injections)
--     Relational Databases design & configuration
+    - PHP
+    - HTML, CSS & JavaScript (entry-level)
+    - cPanel (WebServer configuration)
+    - WordPress WebServer front-end configuration
+    - MySQL & SQL
+    - Cyber Security (contra MySQL Injections)
+    - Relational Databases design & configuration
 
 
   ### Skills Improved:
--     Communication 
--     Time management 
--     Attention to Detail
--     Teamwork
+    - Communication 
+    - Time management 
+    - Attention to Detail
+    - Teamwork
   
 
   ### Softwares/Tools/Code Languages Used:
--     FileZilla Client
--     cPanel
--     WordPress
--     phpMyAdmin
--     MySQL Database
--     Visual Studio Code
--     PHP
--     HTML/CSS & JavaScript
--     SQL
--     Tidio AI (WordPress Plug-in)
+    - FileZilla Client
+    - cPanel
+    - WordPress
+    - phpMyAdmin
+    - MySQL Database
+    - Visual Studio Code
+    - PHP
+    - HTML/CSS & JavaScript
+    - SQL
+    - Tidio AI (WordPress Plug-in)
 
 
 # GPTBOX Overview
