@@ -1,4 +1,4 @@
-  ### What I learned:
+  ### What I Learned:
     - PHP
     - HTML, CSS & JavaScript (entry-level)
     - cPanel (WebServer configuration)
@@ -7,11 +7,23 @@
     - Cyber Security (contra MySQL Injections)
     - Relational Databases design & configuration
 
-  ### Skills improved:
+  ### Skills Improved:
     - Communication 
     - Time management 
     - Attention to Detail
     - Teamwork
+
+  ### Softwares/Tools/Code Languages Used:
+    - FileZilla Client
+    - cPanel
+    - WordPress
+    - phpMyAdmin
+    - MySQL Database
+    - Visual Studio Code
+    - PHP
+    - HTML/CSS & JavaScript
+    - SQL
+    - Tidio AI (WordPress Plug-in)
 
 # GPTBOX Overview
 This project, done in the context of PAP, consisted of developing a WebApp, that has the objective of helping clients that need to store/transport objects reach companies in the storage and transport regime.
