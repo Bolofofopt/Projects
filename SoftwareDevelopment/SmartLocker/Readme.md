@@ -218,7 +218,7 @@ void loop()
 |Sensor|Proximity |
 |Alarm|Buzzer |
 
-## Upgrades to come:
+## TODO
 This is a work in progress, it still misses the remote control of the lockers and the web system described in the 'Description'.
 The upgrades include:
 -        Changing the Arduino to a ESP32
