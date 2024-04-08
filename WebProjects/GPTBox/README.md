@@ -252,3 +252,9 @@ Login:
 Menu:
 
 ![image](https://github.com/Bolofofopt/ProjetosC/assets/145719526/d0ca304c-3573-4632-b824-e1b7ee7d9bd7)
+
+# TODO
+This project was presented and stated that was finished. But there are improvements that I want to do like:
+- Improve the sign in method
+- Host the WebApp in a personal server, with SSL certificates
+- Improve the form, to be automaticly updated when the user chooses a option
