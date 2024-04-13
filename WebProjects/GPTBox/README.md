@@ -4,7 +4,7 @@
     - cPanel (WebServer configuration)
     - WordPress WebServer front-end configuration
     - MySQL & SQL
-    - Cyber Security (contra MySQL Injections)
+    - Cyber Security (against MySQL Injections)
     - Relational Databases design & configuration
 
 
