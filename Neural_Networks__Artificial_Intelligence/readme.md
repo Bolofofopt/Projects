@@ -19,9 +19,12 @@ These projects were built when working for Thales- Ground Transportation Systems
 The framework used was Keras with TensorFlow as backend
 
 ## Diagram
-### For the  
+### For the  model trainer
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/59e0227c-59d8-438a-b195-7e80e0666a0d)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6e983494-948a-4956-9142-fed89c60c341)
+### For the model user/loader
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/15d4ddeb-cbe6-465e-81e9-98e6acc6893b)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/2e7a6d1e-c72b-4065-be52-8d9efc2fdfd6)
 
 
 
