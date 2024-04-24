@@ -13,7 +13,7 @@
     - Keras
 
 # Neural Networks Projects
-These projects were built when working for Thales- Ground Transportation Systems Portugal, they were built for training purpurses because I developed an Artificial Intelligence for CCTVs in the context of RailRoad security and needed some grounds before I finished the main project
+These projects were built when working for Thales- Ground Transportation Systems Portugal, they were built for training purpurses because I developed an Artificial Intelligence for CCTVs in the context of RailRoad security and needed some grounds to finish the main project
 
 # Framework
 The framework used was Keras
