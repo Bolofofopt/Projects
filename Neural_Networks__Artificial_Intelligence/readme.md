@@ -15,13 +15,13 @@
 # Neural Networks Projects
 These projects were built when working for Thales- Ground Transportation Systems Portugal, they were built for training purpurses because I developed an Artificial Intelligence for CCTVs in the context of RailRoad security and needed some grounds to finish the main project
 
-# Framework
+### Framework used
 The framework used was Keras with TensorFlow as backend
 
 
-## flores_AI
+# flores_AI
 This AI model helps identify different types of flowers.
-### How it works
+## How it works
 First I needed to import dependecies and download the dataset I wanted:
 ```python
 import os
@@ -174,7 +174,7 @@ plt.show()
 
 model.save('roses.keras')
 ```
-#### To use the model in another environment:
+### To use the model in another environment:
 Just load the model that was saved, copy some functions that are needed because they complement the model (they are not apart of it so they don't get saved) 
 ```python
 import os
@@ -189,17 +189,17 @@ import matplotlib.pyplot as plt
 load_model = keras.models.load_model('roses.keras')
 load_model.summary()
 ```
-### Model efficiency
+## Model efficiency
 On these 2 graphs we can see the model efficiency based on a few EPOCHs, these graphs are from the flores_AI model but the architecture and the model training is the same for both models (flores_AI & clothes_AI)
 ![Figure1](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6a4008d2-d820-4bce-8ead-59df74d2c6d3)
 
 ![Figure2](https://github.com/Bolofofopt/Public_Projects/assets/145719526/c52c3071-419f-4a6b-aa29-f27fc0761d22)
-### Results
+## Results
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/f15dff3a-3597-4023-8272-7709327eb092)
 
-## clothes_AI
+# clothes_AI
 This AI model helps identify different types of clothes
-### How it works
+## How it works
 First the libraries & download the dataset:
 ```python
 import os
@@ -446,5 +446,5 @@ for i in range(num_images):
 plt.tight_layout()
 plt.show()
 ```
-#### Results
+## Results
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/e8946fcf-d2cf-4a4a-9053-31fc3a199c27)
