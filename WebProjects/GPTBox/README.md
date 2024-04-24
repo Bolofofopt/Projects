@@ -84,7 +84,6 @@ Given that this WebApp has some pages it has a total of 4 PHP files to login, ch
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/280e725e-b6c0-434c-91ae-9e734e7aa868)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/4332fb62-9b1f-401a-b7cc-1f64b8ffb5b2)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/f2cd91fd-6a39-4f5a-ac03-3b955d8e4457)
-![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/29ae12f5-d865-4a84-b179-7322e06ef951)
 
 
 ## CyberSecurity Agains SQL Injections
