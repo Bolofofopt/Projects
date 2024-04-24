@@ -75,7 +75,6 @@ Given that this WebApp has some pages it has a total of 4 PHP files to login, ch
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/f1641ef7-991d-4e7d-bea1-684aff1c7718)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/52523e39-4730-4337-aba2-3a0f9706ec5f)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6bbacc87-7c48-4bb5-9299-3a58849811c8)
-![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/76f1d084-88e0-4497-90fc-d154d75f26f6)
 
 
 #### Sign up:
@@ -83,7 +82,6 @@ Given that this WebApp has some pages it has a total of 4 PHP files to login, ch
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/5898832a-6a77-49cc-9756-f449af75ca93)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/280e725e-b6c0-434c-91ae-9e734e7aa868)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/4332fb62-9b1f-401a-b7cc-1f64b8ffb5b2)
-![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/f2cd91fd-6a39-4f5a-ac03-3b955d8e4457)
 
 
 ## CyberSecurity Agains SQL Injections
