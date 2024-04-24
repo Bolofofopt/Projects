@@ -58,126 +58,34 @@ JavaScript for the pop-up confirmation when submitting a form
 The backend of this WebApp is very secure and on a safe environment, the passwords are encripted to protect the data of the users and on the Database all that relations that are made are by IDs.
 Given that this WebApp has some pages it has a total of 4 PHP files to login, change passwords, the form itself and to signup.
 
-First, I created an connection to the database
-```php
-<?php
-$servername = "---------------";
-$username = "-------------------";
-$password = "------------------";
-$dbname = "-------------------";
-
-/*Cria o $conn para ser utilizado quando criar uma conexão à BD*/
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
-}
-```
-
-To get the form response I needed to do a REQUEST_METHOD via POST:
-```php
-if ($_SERVER["REQUEST_METHOD"] == "POST") { /* Verifica se o método de solicitação HTTP é POST */
-  $emailCliente = $_POST['EmailCliente']; /*Atribui à váriavél $emailCliente o email*/
-  $material = $_POST['material']; /*Atribui à váriavél $material o material*/
-  $medidas = $_POST['medidas']; /*Atribui à váriavél $medidas as medidas*/
-  $tipo = $_POST['tipo']; /*Atribui à váriavél $tipo o tipo*/
-}
-```
-
-Then I needed to to a query to the SQL Database, first to create an package I needed the ID of the client and the ID of the company 
-```php
-/*Procura na Base de dados um cliente com o nome colocado no formulário*/
-$sql = "SELECT Cliente.IDcliente, Cliente.PrimeiroNome FROM Cliente WHERE Cliente.Email  = '$emailCliente'";
-/*Consulta SQL é executada como query(), utilizamos o objeto de conexão à BD $conn, o resultado é guardado 
-na varavél $result*/
-$result = $conn->query($sql);
-
-$nomeCliente = ""; /*Inicialia a variável*/
-
-if ($result->num_rows > 0) { /*Verifica se o número de linhas do resultado é maior que 0*/
-  while($row = $result->fetch_assoc()) { /*Enquanto houver linhas, atribui a linha atual à variável $row*/
-    $idCliente = $row["IDcliente"]; /*Atribui o valor da coluna IDcliente à variável $idCliente*/
-    $nomeCliente = $row["PrimeiroNome"]; /*Atribuir o nome do cliente à variável criada antes*/
-  }
-} else {
- header("Location: https://tgei21.epvr4.net/erro/"); /*Redireciona para uma página de erro*/
-}
-```
-If the client has an account it shows the Companies data:
-```php
-$sql = "SELECT Fornecedor.NomeFornecedor, Fornecedor.EmailFornecedor, Fornecedor.MoradaFornecedor FROM Fornecedor 
-        JOIN caixas ON Fornecedor.IDcaixa = caixas.IDcaixa
-        JOIN TipoDeCaixa ON caixas.IDtipodecaixa = TipoDeCaixa.IDtipodecaixa 
-        WHERE TipoDeCaixa.colDescricaoCaixa = '$material' AND caixas.Medidas = '$medidas' AND Fornecedor.tipo = '$tipo';";
-/*Consulta SQL é executada como query(), utilizamos o objeto de conexão à BD $conn, o resultado é guardado 
-na varavél $result*/
-$result = $conn->query($sql);
-
-$nomeFornecedor = ""; /*Inicialia a variável*/
-
-if ($result->num_rows > 0) { /*Verifica se o número de linhas é maior que 0*/
-  while($row = $result->fetch_assoc()) { /*Enquanto houver linhas, atribui a linha atual à variável $row*/
-    echo "<br>"; /*Quebra de linha*/
-    echo "Nome do Fornecedor: " . $row["NomeFornecedor"]. "<br>"; /*Output dos dados do fornecedor*/
-    echo "Email do Fornecedor: " . $row["EmailFornecedor"]. "<br>"; /*Output dos dados do fornecedor*/
-    echo "Morada do Fornecedor: " . $row["MoradaFornecedor"]. "<br>"; /*Output dos dados do fornecedor*/
-    $nomeFornecedor = $row["NomeFornecedor"]; /*Atribui o nome do fornecedor à variável criada anteriormente*/
-  }
-} else {
-  echo "Nenhum resultado encontrado"; /*Avisa se não houver fornecedores encontrados*/
-}
-```
-
-Then it grabs the ID of the company and creates and package on another table with the ID of the client and the ID of the company:
-```php
-  
-/*Procura o ID do fornecedor que têm o nome do último fornecedor colocado no output dos dados*/
-$sql = "SELECT Fornecedor.IDfornecedor FROM Fornecedor WHERE Fornecedor.NomeFornecedor = '$nomeFornecedor'";
-/*Consulta SQL é executada como query(), utilizamos o objeto de conexão à BD $conn, o resultado é guardado 
-na varavél $result*/
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) { /*Verifica se o número de linhas é maior que 0*/
-  while($row = $result->fetch_assoc()) { /*Enquanto houver linhas, atribui a linha atual à variável $row*/
-    $idFornecedor = $row["IDfornecedor"]; /* Atribui o valor da coluna 'IDfornecedor' da linha atual à variável $idFornecedor */
-  }
-} else {
-  echo "Nenhum fornecedor encontrado";/*Avisa se não houver fornecedores encontrados*/
-}
-
-/* Criar um novo IDEncomenda*/
-
-/* Buscar o maior IDencomenda atual*/
-$sql = "SELECT MAX(IDencomenda) as max_id FROM Encomenda";
-$result = $conn->query($sql);
-
-$next_id = 1; /*Inicia com 1*/
-
-if ($result->num_rows > 0) { /*Verifica se o número de linhas é maior que 0*/
-  $row = $result->fetch_assoc(); /*Enquanto houver linhas, atribui a linha atual à variável $row*/
-  $next_id = $row["max_id"] + 1; /*Adiciona +1 quando deteta que existe o ID*/
-}
+FlowCharts:
+Main Form:
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/c63a03de-0b6a-4a97-ba14-7f8ee8a381b1)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/7003fd5f-149f-43d3-8ffc-9534d621a1e5)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/9393446a-28da-4cfb-bd7f-69a1a509482d)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/5b006452-1606-417f-9c85-b5226c57dc75)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/ca277a4f-a99f-4481-8281-05adf573e952)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/5e2b937b-ef45-4e9a-a9e7-ba1e4bee3c42)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/45b29913-57a9-46a2-ba39-0309701b847c)
 
 
-/*Insere a encomenda*/
-$sql = "INSERT INTO Encomenda (IDfornecedor, IDcliente, IDencomenda) VALUES ('$idFornecedor', '$idCliente', '$next_id')";
 
-if ($conn->query($sql) === TRUE) { /*Verifica se a consulta SQL foi bem sucedida*/
-    /*Confirma que a encomenda foi adicionada e diz o ID*/
-    echo "Nova encomenda criada com sucesso. O número da encomenda é: " . $next_id;
+Login:
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/1d593779-5560-464e-be67-0da6745a81ae)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/f1641ef7-991d-4e7d-bea1-684aff1c7718)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/52523e39-4730-4337-aba2-3a0f9706ec5f)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6bbacc87-7c48-4bb5-9299-3a58849811c8)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/76f1d084-88e0-4497-90fc-d154d75f26f6)
 
-} 
-else 
-{
-  header("Location: https://tgei21.epvr4.net/erro/ "); /*Redireciona para uma página de erro*/
-}
-```
 
-Then it closes the connection to the database:
-```php
-$conn->close();/*Fecha a conexão à BD*/
-?>
-```
+Sign up:
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/58a0c709-2393-4fe4-a2aa-6aef85b1f4d8)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/5898832a-6a77-49cc-9756-f449af75ca93)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/280e725e-b6c0-434c-91ae-9e734e7aa868)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/4332fb62-9b1f-401a-b7cc-1f64b8ffb5b2)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/f2cd91fd-6a39-4f5a-ac03-3b955d8e4457)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/29ae12f5-d865-4a84-b179-7322e06ef951)
+
 
 ## CyberSecurity Agains SQL Injections
 The Database is protected agains SQL injections by using a user with less permissions so it can't delete or change data that he isn't suposed to.
@@ -194,6 +102,7 @@ In case of incorrect password or username:
 
 
 ![image](https://github.com/Bolofofopt/ProjetosC/assets/145719526/f05208f3-52f2-402b-8947-a9819bcebfb6)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/90fd4f04-5f08-42a2-8f47-b460bf864b06)
 
 
 Signup:
