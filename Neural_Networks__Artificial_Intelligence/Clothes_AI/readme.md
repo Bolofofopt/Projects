@@ -1,4 +1,4 @@
-# Same on main branch
+# Same on the main branch
 ## clothes_AI
 This AI model helps identify different types of clothes
 ### How it works
