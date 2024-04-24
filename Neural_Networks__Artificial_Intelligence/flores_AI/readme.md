@@ -174,3 +174,6 @@ On these 2 graphs we can see the model efficiency based on a few EPOCHs, these g
 ![Figure1](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6a4008d2-d820-4bce-8ead-59df74d2c6d3)
 
 ![Figure2](https://github.com/Bolofofopt/Public_Projects/assets/145719526/c52c3071-419f-4a6b-aa29-f27fc0761d22)
+
+### Results
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/f15dff3a-3597-4023-8272-7709327eb092)
