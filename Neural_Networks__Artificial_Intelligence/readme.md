@@ -203,9 +203,11 @@ load_model.summary()
 On these 2 graphs we can see the model efficiency based on a few EPOCHs, these graphs are from the flores_AI model but the architecture and the model training is the same for both models (flores_AI & clothes_AI)
 
 For the first 10 Epochs:
+
 ![Figure1](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6a4008d2-d820-4bce-8ead-59df74d2c6d3)
 
 For the 10 to 20 Epochs:
+
 ![Figure2](https://github.com/Bolofofopt/Public_Projects/assets/145719526/c52c3071-419f-4a6b-aa29-f27fc0761d22)
 
 
