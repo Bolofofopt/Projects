@@ -18,6 +18,12 @@ These projects were built when working for Thales- Ground Transportation Systems
 ### Framework used
 The framework used was Keras with TensorFlow as backend
 
+## Diagram
+### For the  
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/59e0227c-59d8-438a-b195-7e80e0666a0d)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6e983494-948a-4956-9142-fed89c60c341)
+
+
 
 # flores_AI
 This AI model helps identify different types of flowers.
