@@ -31,6 +31,7 @@ The framework used was Keras with TensorFlow as backend
 # flores_AI
 This AI model helps identify different types of flowers.
 ## How it works
+## How the code works
 First I needed to import dependecies and download the dataset I wanted:
 ```python
 import os
@@ -209,6 +210,7 @@ On these 2 graphs we can see the model efficiency based on a few EPOCHs, these g
 # clothes_AI
 This AI model helps identify different types of clothes
 ## How it works
+## How the code works
 First the libraries & download the dataset:
 ```python
 import os
