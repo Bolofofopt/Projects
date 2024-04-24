@@ -58,8 +58,8 @@ JavaScript for the pop-up confirmation when submitting a form
 The backend of this WebApp is very secure and on a safe environment, the passwords are encripted to protect the data of the users and on the Database all that relations that are made are by IDs.
 Given that this WebApp has some pages it has a total of 4 PHP files to login, change passwords, the form itself and to signup.
 
-FlowCharts:
-Main Form:
+### FlowCharts:
+#### Main Form:
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/c63a03de-0b6a-4a97-ba14-7f8ee8a381b1)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/7003fd5f-149f-43d3-8ffc-9534d621a1e5)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/9393446a-28da-4cfb-bd7f-69a1a509482d)
@@ -70,7 +70,7 @@ Main Form:
 
 
 
-Login:
+#### Login:
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/1d593779-5560-464e-be67-0da6745a81ae)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/f1641ef7-991d-4e7d-bea1-684aff1c7718)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/52523e39-4730-4337-aba2-3a0f9706ec5f)
@@ -78,7 +78,7 @@ Login:
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/76f1d084-88e0-4497-90fc-d154d75f26f6)
 
 
-Sign up:
+#### Sign up:
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/58a0c709-2393-4fe4-a2aa-6aef85b1f4d8)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/5898832a-6a77-49cc-9756-f449af75ca93)
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/280e725e-b6c0-434c-91ae-9e734e7aa868)
