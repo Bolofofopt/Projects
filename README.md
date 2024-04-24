@@ -17,6 +17,3 @@ SensorVault_Network (Private project, made when working for Thales- GTSP)
 HydroLock_UPS (Private project, made when working for Thales- GTSP)
 
 SmartLocker (Programmed in C, compiled using Arduino IDE)
-
-# Games made by me
-3 games made by me on a Rumos Game Developemnt course, I lost the source code and only have the finished result (Programmed in Python)
