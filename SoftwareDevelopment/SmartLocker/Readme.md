@@ -1,3 +1,10 @@
+<p align="center"><img width="40%" src="img/Arduino_logo.png" /></p>
+
+--------------------------------------------------------------------------------
+
+This repository shows my project Smart Locker.
+
+<br/>
 # SmartLocker
 ### Skills improved:
       - Software Development 
