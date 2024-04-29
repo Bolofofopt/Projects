@@ -1,4 +1,12 @@
 <p align="center"><img width="40%" src="img/OIP.jpeg" /></p>
+
+--------------------------------------------------------------------------------
+
+This repository shows my projects that involved deep learning, computer vision & neural networks (Artificial Intelligence)
+
+
+<br/>
+
 ### What I Learned:
     - Neural Networks
     - Computer Vision
