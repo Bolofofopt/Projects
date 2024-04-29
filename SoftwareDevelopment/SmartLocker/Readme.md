@@ -1,4 +1,4 @@
-<p align="center"><img width="40%" src="img/Arduino_logo.png" /></p>
+<p align="center"><img width="40%" src="img/Arduino_Logo.png" /></p>
 
 --------------------------------------------------------------------------------
 
