@@ -1,4 +1,4 @@
-<p align="center"><img width="40%" src="img/OIP.jpeg" /></p>
+<p align="center"><img width="40%" src="img/OID.jpeg" /></p>
 
 --------------------------------------------------------------------------------
 
