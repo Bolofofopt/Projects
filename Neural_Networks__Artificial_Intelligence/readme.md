@@ -28,11 +28,16 @@ They are very similar, what changes is the dataset used and some configuration s
 ### Framework used
 The framework used was Keras with TensorFlow as backend
 
-
+## How it works
+### For the  model trainer
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/59e0227c-59d8-438a-b195-7e80e0666a0d)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6e983494-948a-4956-9142-fed89c60c341)
+### For the model user/loader
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/15d4ddeb-cbe6-465e-81e9-98e6acc6893b)
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/2e7a6d1e-c72b-4065-be52-8d9efc2fdfd6)
 
 # flores_AI
 This AI model helps identify different types of flowers.
-## How it works
 ## How the code works
 First I needed to import dependecies and download the dataset I wanted:
 ```python
@@ -219,7 +224,6 @@ For the 10 to 20 Epochs:
 
 # clothes_AI
 This AI model helps identify different types of clothes
-## How it works
 ## How the code works
 First the libraries & download the dataset:
 ```python
@@ -469,12 +473,3 @@ plt.show()
 ```
 ## Results
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/e8946fcf-d2cf-4a4a-9053-31fc3a199c27)
-
-
-## Diagram
-### For the  model trainer
-![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/59e0227c-59d8-438a-b195-7e80e0666a0d)
-![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/6e983494-948a-4956-9142-fed89c60c341)
-### For the model user/loader
-![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/15d4ddeb-cbe6-465e-81e9-98e6acc6893b)
-![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/2e7a6d1e-c72b-4065-be52-8d9efc2fdfd6)
