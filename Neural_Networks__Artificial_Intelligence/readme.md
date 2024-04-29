@@ -22,7 +22,8 @@ This repository shows my projects that involved deep learning, computer vision &
     - Keras
 
 # Neural Networks Projects
-These projects were built when working for Thales- Ground Transportation Systems Portugal, they were built for training purpurses because I developed an Artificial Intelligence for CCTVs in the context of RailRoad security and needed some grounds first before finishing the main project
+These projects were built when working for Thales- Ground Transportation Systems Portugal, they were built for training purpurses because I developed an Artificial Intelligence for CCTVs in the context of RailRoad security and needed some grounds first before finishing the main project.
+They are very similar, what changes is the dataset used and some configuration settings.
 
 ### Framework used
 The framework used was Keras with TensorFlow as backend
