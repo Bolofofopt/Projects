@@ -1,3 +1,4 @@
+<p align="center"><img width="40%" src="img/OIP.jpeg" /></p>
 ### What I Learned:
     - Neural Networks
     - Computer Vision
