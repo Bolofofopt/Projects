@@ -1,9 +1,9 @@
 <?php
 /*Conexão com a BD*/
-$servername = "localhost";
-$username = "admin";
-$password = "adminPassword";
-$dbname = "mtgei21epvr_grupo02_DB";
+$servername = "-------------------";
+$username = "-------------------";
+$password = "-------------------";
+$dbname = "-------------------";
 
 /*Cria o $conn para ser utilizado quando criar uma conexão à BD*/
 $conn = new mysqli($servername, $username, $password, $dbname);
