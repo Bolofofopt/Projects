@@ -4,10 +4,10 @@
 
 
 // Conexão com a BD ( usando a conta de cliente, que tem apenas acesso a ver as tabelas)
-$servername = "localhost";
-$username = "admin";
-$password = "adminPassword";
-$dbname = "mtgei21epvr_grupo02_DB";
+$servername = "-------------------";
+$username = "-------------------";
+$password = "-------------------";
+$dbname = "-------------------";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
