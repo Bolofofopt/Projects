@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "admin";
-$password = "adminPassword";
-$dbname = "mtgei21epvr_grupo02_DB";
+$servername = "-------------------";
+$username = "-------------------";
+$password = "-------------------";
+$dbname = "-------------------";
 
 /* Cria uma nova conexão MySQLi. As variáveis $servername, $username, $password e $dbname foram definidas anteriormente */
 $conn = new mysqli($servername, $username, $password, $dbname);
