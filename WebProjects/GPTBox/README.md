@@ -34,8 +34,8 @@ This project, done in the context of the final course project, consisted of deve
 The clients that want to use our services need to be registered in our database and they can do so through one of the pages on the website, to access the form to know the companies they need to log in.
 The website is hosted in a WebServer and on a portable XAMPP configured by us.
 
-To do this I needed to develop a WebApp down to the configuration of the WebServer to the development of Relational Databases, FTP Accounts, Frontend & Backend.
-This project had 3 Server so I needed to migrate the Databases to each server.
+To do this I needed to develop a WebApp down to the configuration of the WebServer, Relational Databases & FTP Accounts to the development of Frontend & Backend.
+This project was done on 3 Servers so I needed to migrate the Databases to each server which provided a very good skill of migrating servers.
 
 ## Configuration of the WebServer
 To configure the WebServer I used cPanel, a tool used when the SO is Linux, and with this tool I've created Databases, MySQL Users & FTP Accounts.
