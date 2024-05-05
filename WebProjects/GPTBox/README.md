@@ -43,7 +43,7 @@ To configure the WebServer I used cPanel, a tool used when the SO is Linux, and 
 ## Database
 ![image](https://github.com/Bolofofopt/ProjetosC/assets/145719526/c2d847f7-408e-48f3-b2b8-1be5598ab6c7)
 
-#### phpMyAdmin used to overview and configure tables
+#### phpMyAdmin used to overview and configure the database tables
 
 ## WordPress
 For the development of the WebApp itself I used WordPress because the focus wasn't to build a strong Frontend with HTML, CSS & JavaScript but to build a strong and secure Backend so the users can use the forms in a safe environment.
