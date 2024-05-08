@@ -167,4 +167,4 @@ This project was presented and stated that was finished. But there are improveme
 -        Improve the sign in method
 -        Host the WebApp in a personal server, with SSL certificates
 -        Improve the form, to be automatically updated when the user chooses a option
--        Hash the passwords & encrypt insted of just encrypting
+-        Hash the passwords & encrypt instead of just encrypting
