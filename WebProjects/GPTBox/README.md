@@ -39,6 +39,7 @@ This project was done on 3 Servers so I needed to migrate the Databases to each 
 
 ## Configuration of the WebServer
 To configure the WebServer I used cPanel, a tool used when the SO is Linux, and with this tool I've created Databases, MySQL Users & FTP Accounts.
+![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/9ea1bdff-1f3a-4480-a781-9610cc1fcc63)
 
 ## Database
 ![image](https://github.com/Bolofofopt/ProjetosC/assets/145719526/c2d847f7-408e-48f3-b2b8-1be5598ab6c7)
