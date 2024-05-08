@@ -102,7 +102,6 @@ In case of incorrect password or username:
 
 
 ![image](https://github.com/Bolofofopt/ProjetosC/assets/145719526/f05208f3-52f2-402b-8947-a9819bcebfb6)
-![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/90fd4f04-5f08-42a2-8f47-b460bf864b06)
 
 
 Signup:
