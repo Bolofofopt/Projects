@@ -6,6 +6,7 @@
     - MySQL & SQL
     - Cyber Security (against MySQL Injections)
     - Relational Databases design & configuration
+    - Web development
 
 
   ### Skills Improved:
