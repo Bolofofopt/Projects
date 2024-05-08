@@ -229,7 +229,9 @@ void loop()
 ## TODO
 This is a work in progress, it still misses the remote control of the lockers and the web system described in the 'Description'.
 The upgrades include:
+-        Build the project in Real Life
 -        Changing the Arduino to a ESP32
 -        Communication between the ESP32 and a server
 -        Research of which software to use to receive the data an put it on a Web Page
 -        Configuration of the SO and putting a local secure WebServer or a local secure Zabbix dashboard
+-        Remove the lockers idea and build a small device that can be implemented to all kinds of doors or lockers.
