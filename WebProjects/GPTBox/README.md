@@ -58,7 +58,7 @@ CSS for the interactive buttons
 JavaScript for the pop-up confirmation when submitting a form
 
 ## PHP
-The backend of this WebApp is very secure and on a safe environment, the passwords are encripted to protect the data of the users and on the Database all that relations that are made are by IDs.
+The backend of a WebApp needs to be very secure and on a safe environment, for this project the passwords are encripted to protect the data of the users and on the Database all that relations that are made are by IDs.
 Given that this WebApp has some pages it has a total of 4 PHP files to login, change passwords, the form itself and to signup.
 
 ### FlowCharts:
@@ -167,3 +167,4 @@ This project was presented and stated that was finished. But there are improveme
 -        Improve the sign in method
 -        Host the WebApp in a personal server, with SSL certificates
 -        Improve the form, to be automatically updated when the user chooses a option
+-        Hash the passwords & encrypt insted of just encrypting
