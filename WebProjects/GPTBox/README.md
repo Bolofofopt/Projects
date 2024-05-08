@@ -165,5 +165,6 @@ Menu:
 This project was presented and stated that was finished. But there are improvements that I want to do, like:
 -        Improve the sign in method
 -        Host the WebApp in a personal server, with SSL certificates
+-        Configure the WebApp using Django framework
 -        Improve the form, to be automatically updated when the user chooses a option
 -        Hash the passwords & encrypt instead of just encrypting
