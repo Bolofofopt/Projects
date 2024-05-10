@@ -39,7 +39,7 @@ To do this I needed to develop a WebApp down to the configuration of the WebServ
 This project was done on 3 Servers so I needed to migrate the Databases to each server which provided a very good skill of migrating servers.
 
 ## Configuration of the WebServer
-To configure the WebServer I used cPanel, a tool used when the SO is Linux, and with this tool I've created Databases, MySQL Users & FTP Accounts.
+To configure the WebServer I used cPanel, a tool used when the OS is Linux, and with this tool I've created Databases, MySQL Users & FTP Accounts.
 ![image](https://github.com/Bolofofopt/Public_Projects/assets/145719526/9ea1bdff-1f3a-4480-a781-9610cc1fcc63)
 
 ## Database
