@@ -14,7 +14,7 @@ GPTBox (Programmed in PHP, HTML/CSS & JavaScript)
 # Software Projects
 SensorVault_Network (Closed-Source project, made when working for Thales- GTSPT)
 
-HydroLock_UPS (Closed-Source project, made when working for Thales- GTSPT)
+UPS_HydroGen_Sensor (Closed-Source project, made when working for Thales- GTSPT)
 
 SmartLocker (Programmed in C, compiled using Arduino IDE)
 
