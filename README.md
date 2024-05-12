@@ -26,6 +26,6 @@ SmartLocker (Programmed in C, compiled using Arduino IDE)
 # Private Projects Key-Words
 GPTcctv - Neural Networks, Computer Vision, Python, PyTorch framework, fine-tuning learning transfer.
 
-UPS_HydroGen_Sensor - Zabbix configuration, Software Development, IoT, C, Arduino IDE, MicroControled Units(MCU), Eletronics.
+UPS_HydroGen_Sensor - Zabbix, Software Development, IoT, C, Arduino IDE, MicroControled Units(MCU), Eletronics.
 
-SensorVault_Network - Zabbix configuration, Software Development, IoT, C, Arduino IDE, MicroControled Units(MCU), Wi-Fi, Bluetooth, WebServer, Eletronics.
+SensorVault_Network - Zabbix, Software Development, IoT, C, Arduino IDE, MicroControled Units(MCU), Wi-Fi, Bluetooth, WebServer, Eletronics.
