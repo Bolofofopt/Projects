@@ -2,7 +2,7 @@
 
 --------------------------------------------------------------------------------
 
-This repository shows my projects that involved deep learning, computer vision & neural networks (Artificial Intelligence)
+This repository aims to show my projects that involved deep learning, computer vision & neural networks (Artificial Intelligence) showing my knowledge in this area.
 
 
 <br/>
