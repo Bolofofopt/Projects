@@ -235,5 +235,3 @@ The upgrades include:
 -        Research of which software to use to receive the data an put it on a Web Page
 -        Configuration of the SO and putting a local secure WebServer or a local secure Zabbix dashboard
 -        Remove the lockers idea and build a small device that can be implemented to all kinds of doors or lockers.
-
-This project will serve as basis to a SecurityAlarm project that I am looking forward to do.
