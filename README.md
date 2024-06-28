@@ -10,4 +10,4 @@ SecurityV (On a dedicated repository)
 # Software Projects
 SmartLocker (Programmed in C, compiled using Arduino IDE)
 
-(On a dedicated repository)
+SecurityV (On a dedicated repository)
